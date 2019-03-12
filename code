@@ -325,16 +325,4 @@ classdef PatientsDisplay < matlab.apps.AppBase
             % Execute the startup function
             runStartupFcn(app, @startupFcn)
 
-            if nargout == 0
-                clear app
-            end
-        end
 
-        % Code that executes before app deletion
-        function delete(app)
-
-            % Delete UIFigure when app is deleted
-            delete(app.UIFigure)
-        end
-    end
-end
