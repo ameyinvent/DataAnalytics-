@@ -334,6 +334,8 @@ classdef PatientsDisplay < matlab.apps.AppBase
 
             % Delete UIFigure when app is deleted
               delete(app.UIFigure)
+              end
+   
         
 
 
